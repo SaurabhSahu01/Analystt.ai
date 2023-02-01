@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import _ from "lodash";
 import List from "./Components/List";
 function App() {
   const [userdata, setuserdata] = useState([]);
@@ -14,13 +13,13 @@ function App() {
   useEffect(() => {
     userData();
   }, [])
-
   return (
-    <div className="m-5">
+    <div className="m-10 h-[67vh] my-auto bg-red-500 overflow-y-hidden rounded-md">
       {loading ? <p>loading...</p> : userdata.map((user, index) => {
+        if(index < 3)
         return <List data = {user} key={user.id}></List>
+        else return <></>
       })}
-      <List />
     </div>
   );
 }

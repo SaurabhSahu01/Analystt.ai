@@ -1,0 +1,14 @@
+.hiddenDiv{
+    transition: 200ms;
+    transition-delay: 0ms;
+    transition-timing-function: linear;
+    max-height: 0;
+    overflow-y: hidden;
+}
+.showDiv{
+    transition: 200ms;
+    transition-delay: 0ms;
+    transition-timing-function: linear;
+    max-height: 500px;
+    overflow-y: hidden;
+}

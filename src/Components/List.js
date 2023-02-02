@@ -12,7 +12,7 @@ function List({ data }) {
 
 
   return (
-    <div className='w-10/12 mx-auto  bg-slate-100 p-2 rounded-xl shadow-sm text-sm'>
+    <div className='w-10/12 mx-auto  bg-slate-100 p-2 rounded-xl shadow-sm text-sm tracking-wide'>
       <ul className='w-10/12 mx-auto h-[150px] my-auto grid grid-cols-5 items-center place-items-start gap-7'>
         <li className='text-lg'>{data?.company?.name}</li>
         <div>

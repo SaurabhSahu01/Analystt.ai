@@ -38,7 +38,7 @@ function App() {
   }, [])
   return (
     <div>
-      <p className="text-center text-3xl font-semibold">Analystt.ai Users List</p>
+      <p className="text-center text-3xl font-semibold text-red-500 tracking-widest">Analystt.ai Users List</p>
       <div className="min-h-[90vh] my-auto overflow-y-scroll flex flex-col justify-around gap-5">
         {loading ? <p className="font-bold text-3xl text-center text-red-500">Loading...</p> : userdata.map((user, ind) => {
           return (ind + 1 > (3 * (index - 1)) && ind + 1 <= (3 * (index))) ? <List data={userdata[ind]} key={userdata[ind].id}></List> : <></>

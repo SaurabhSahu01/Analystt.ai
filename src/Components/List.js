@@ -13,7 +13,7 @@ function List({ data }) {
 
   return (
     <div className='w-10/12 mx-auto  bg-slate-100 p-2 rounded-xl shadow-sm text-sm tracking-wide'>
-      <ul className='w-10/12 mx-auto h-[150px] my-auto grid grid-cols-5 items-center place-items-start gap-7'>
+      <ul className='w-10/12 mx-auto md:h-[150px] sm:h-fit my-auto grid md:grid-cols-5 sm:grid-cols-1 items-center place-items-start gap-7'>
         <li className='text-lg'>{data?.company?.name}</li>
         <div>
           <p className='font-semibold text-lg'>Contact</p>
@@ -27,7 +27,7 @@ function List({ data }) {
           <p className='font-semibold text-lg'>Street</p>
           <li>{data?.address?.street}</li>
         </div>
-        <button className='w-20 p-2 bg-red-500 rounded-xl text-yellow-50 font-semibold self-center place-self-end' onClick={clickHandler}>{!visible ? "Details" : "Hide"}</button>
+        <button className='w-20 p-2 bg-red-500 rounded-xl text-yellow-50 font-semibold self-center place-self-center' onClick={clickHandler}>{!visible ? "Details" : "Hide"}</button>
       </ul>
       <div className={!visible ? 'flex flex-wrap w-9/12 mx-auto justify-between items-center hiddenDiv' : 'flex flex-wrap w-9/12 mx-auto justify-between items-center showDiv bg-white rounded-lg p-4 my-5 shadow-lg'}>
         <div className='w-11/12 mx-auto'>
@@ -42,7 +42,7 @@ function List({ data }) {
               <p>{data?.website}</p>
             </div>
           </div>
-          <div className='w-full mx-auto flex justify-between items-center mt-5'>
+          <div className='w-full mx-auto flex flex-wrap justify-between items-center mt-5'>
             <ul className='flex flex-col gap-4'>
               <div>
                 <p className="font-semibold text-lg">Contact Person</p>

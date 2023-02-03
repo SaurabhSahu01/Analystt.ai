@@ -45,7 +45,7 @@ function App() {
         })}
       </div>
       <div className="w-full fixed bottom-5 z-50">
-        <ul className="md:w-6/12 sm:w-10/12 mx-auto flex justify-around items-center mt-2 cursor-pointer select-none">
+        <ul className="md:w-6/12 sm:w-10/12 mx-auto flex justify-around items-center mt-2 lg:cursor-pointer select-none">
           <ArrowBackIosIcon onClick={indexDec}></ArrowBackIosIcon>
           {userdata.map((user, ind) => {
             let times = userdata.length / 3;

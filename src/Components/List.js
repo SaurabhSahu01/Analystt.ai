@@ -27,7 +27,7 @@ function List({ data }) {
           <p className='font-semibold text-lg'>Street</p>
           <li>{data?.address?.street}</li>
         </div>
-        <button className='w-20 p-2 bg-red-500 rounded-xl text-yellow-50 font-semibold self-center place-self-center' onClick={clickHandler}>{!visible ? "Details" : "Hide"}</button>
+        <button className='w-20 p-2 bg-red-500 rounded-xl text-yellow-50 font-semibold self-center place-self-center select-none' onClick={clickHandler}>{!visible ? "Details" : "Hide"}</button>
       </ul>
       <div className={!visible ? 'flex flex-wrap w-9/12 mx-auto justify-between items-center hiddenDiv' : 'flex flex-wrap w-9/12 mx-auto justify-between items-center showDiv bg-white rounded-lg p-4 my-5 shadow-lg'}>
         <div className='w-11/12 mx-auto'>
